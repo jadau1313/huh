@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <Label fx:id="titleLbl" layoutX="72.0" layoutY="37.0" prefHeight="29.0" prefWidth="407.0" text="Shady Scheduling Solutions" textFill="#111111">
+         <font>
+            <Font name="Droid Sans Mono" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="uNameLbl" layoutX="44.0" layoutY="105.0" text="Username" />
+      <Label fx:id="pwLabel" layoutX="44.0" layoutY="176.0" text="Password" />
+      <TextField fx:id="userNameField" layoutX="139.0" layoutY="101.0" promptText="enter username" />
+      <TextField fx:id="pwField" layoutX="139.0" layoutY="172.0" promptText="enter password" />
+      <Label fx:id="locationLbl" layoutX="55.0" layoutY="304.0" text="Local TimeZone: " />
+      <Label fx:id="userLocationLbl" layoutX="181.0" layoutY="304.0" text="FirstLevelDivisionData" />
+      <Button fx:id="loginBtn" layoutX="411.0" layoutY="347.0" mnemonicParsing="false" onAction="#checkLogIn" text="Log in" />
+      <Button fx:id="exitBtn" layoutX="502.0" layoutY="347.0" mnemonicParsing="false" onAction="#closeApplication" text="Exit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="602.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateAppointmentController">
+   <children>
+      <Label fx:id="updateApptLbl" layoutX="56.0" layoutY="49.0" text="Update Appointment" textFill="#12b874">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <Label layoutX="335.0" layoutY="324.0" text="End Time" />
+      <Label layoutX="335.0" layoutY="284.0" text="End Date" />
+      <Label layoutX="335.0" layoutY="165.0" text="Start Time" />
+      <Label layoutX="335.0" layoutY="122.0" text="Start Date" />
+      <Label layoutX="35.0" layoutY="397.0" text="User ID" />
+      <Label layoutX="35.0" layoutY="360.0" text="Customer ID" />
+      <Label layoutX="35.0" layoutY="324.0" text="Contact" />
+      <Label layoutX="35.0" layoutY="284.0" text="Type" />
+      <Label layoutX="35.0" layoutY="241.0" text="Location" />
+      <Label layoutX="35.0" layoutY="203.0" text="Description" />
+      <Label layoutX="35.0" layoutY="165.0" text="Title" />
+      <Label layoutX="35.0" layoutY="122.0" text="Appointment ID" />
+      <TextField fx:id="updateApptId" editable="false" layoutX="138.0" layoutY="118.0" promptText="AutoGen-disabled" />
+      <TextField fx:id="updateApptTitle" layoutX="138.0" layoutY="161.0" />
+      <TextField fx:id="updateApptDescription" layoutX="138.0" layoutY="199.0" />
+      <TextField fx:id="updateApptLocation" layoutX="138.0" layoutY="237.0" />
+      <TextField fx:id="updateApptType" layoutX="138.0" layoutY="280.0" />
+      <ComboBox fx:id="updateApptContactCB" layoutX="138.0" layoutY="320.0" prefWidth="150.0" promptText="select contact" />
+      <ComboBox fx:id="updateApptCustIdCB" layoutX="138.0" layoutY="356.0" prefWidth="150.0" promptText="select customer" />
+      <ComboBox fx:id="updateApptUserIdCB" layoutX="138.0" layoutY="393.0" prefWidth="150.0" promptText="select user" />
+      <DatePicker fx:id="updateApptStartDate" layoutX="396.0" layoutY="118.0" promptText="select date" />
+      <ComboBox fx:id="updateApptStartTime" layoutX="396.0" layoutY="161.0" prefWidth="150.0" promptText="select time" />
+      <DatePicker fx:id="updateApptEndDate" layoutX="389.0" layoutY="280.0" promptText="select date" />
+      <ComboBox fx:id="updateApptEndTime" layoutX="388.0" layoutY="320.0" prefWidth="150.0" promptText="select time" />
+      <Button fx:id="addApptBackBtn" layoutX="389.0" layoutY="553.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Button fx:id="addApptAddBtn" layoutX="458.0" layoutY="553.0" mnemonicParsing="false" onAction="#updateAppt" text="Update Appointment" />
+   </children>
+</AnchorPane>

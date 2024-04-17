@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerController">
+   <children>
+      <Label layoutX="33.0" layoutY="27.0" text="Add Customer" textFill="#da1495">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCustomerIDLbl" layoutX="33.0" layoutY="102.0" text="ID" />
+      <Label fx:id="addCustomerNameLbl" layoutX="33.0" layoutY="143.0" text="Name" />
+      <Label fx:id="addCustomerAddressLbl" layoutX="33.0" layoutY="185.0" text="Address" />
+      <Label fx:id="addCustomerPostalLbl" layoutX="33.0" layoutY="229.0" text="Postal Code" />
+      <Label fx:id="addCustomerPhoneLbl" layoutX="33.0" layoutY="271.0" text="Telephone number" />
+      <Label fx:id="addCustomerCountryLbl" layoutX="33.0" layoutY="317.0" text="Country" />
+      <Label fx:id="addCustStateLbl" layoutX="33.0" layoutY="365.0" text="State/Province" />
+      <TextField fx:id="addCustomerIdField" editable="false" layoutX="177.0" layoutY="98.0" promptText="AutoGen-disabled" />
+      <TextField fx:id="addCustomerNameField" layoutX="177.0" layoutY="139.0" />
+      <TextField fx:id="addCustomerAddressField" layoutX="177.0" layoutY="181.0" />
+      <TextField fx:id="addCustomerPostalField" layoutX="177.0" layoutY="225.0" />
+      <TextField fx:id="addCustomerPhoneField" layoutX="177.0" layoutY="267.0" />
+      <ComboBox fx:id="countryComboBoxAC" layoutX="177.0" layoutY="313.0" onAction="#selectCountry" prefWidth="150.0" promptText="Select Country" />
+      <ComboBox fx:id="stateProvinceComboBoxAC" layoutX="177.0" layoutY="361.0" prefWidth="150.0" promptText="State/Province" />
+      <Button fx:id="addCustomerBackBtn" layoutX="401.0" layoutY="523.0" mnemonicParsing="false" onAction="#goToCustomerView" text="Back" />
+      <Button fx:id="addCustomerAddBtn" layoutX="471.0" layoutY="523.0" mnemonicParsing="false" onAction="#addCustomer" text="Add Customer" />
+   </children>
+</AnchorPane>

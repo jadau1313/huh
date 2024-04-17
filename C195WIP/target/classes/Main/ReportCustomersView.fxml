@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="526.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportCustomersController">
+   <children>
+      <Label layoutX="38.0" layoutY="40.0" text="Customer Appointment Report" textFill="#cf0808">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="49.0" text="Sort by:" />
+      <RadioButton fx:id="sortByTypeRB" layoutX="495.0" layoutY="49.0" mnemonicParsing="false" onAction="#showReportByType" selected="true" text="Type">
+         <toggleGroup>
+            <ToggleGroup fx:id="g" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="sortByMonthRB" layoutX="594.0" layoutY="49.0" mnemonicParsing="false" onAction="#showReportByMonth" text="Month" toggleGroup="$g" />
+      <ComboBox fx:id="typeOrMonthCB" layoutX="534.0" layoutY="97.0" onAction="#selectType" prefWidth="150.0" />
+      <Label fx:id="selectTypeOrMonthLbl" layoutX="429.0" layoutY="101.0" text="Select Type: " />
+      <TableView fx:id="customerApptTV" layoutX="51.0" layoutY="163.0" prefHeight="248.0" prefWidth="815.0">
+        <columns>
+            <TableColumn fx:id="apptIdCol" prefWidth="109.0" text="Appointment ID" />
+          <TableColumn fx:id="customerIdCol" prefWidth="106.0" text="Customer ID" />
+            <TableColumn fx:id="typeCol" prefWidth="98.0" text="Type" />
+            <TableColumn fx:id="descriptionCol" prefWidth="109.0" text="Description" />
+            <TableColumn fx:id="startCol" prefWidth="156.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="99.0" text="End" />
+            <TableColumn fx:id="contactCol" prefWidth="136.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Button fx:id="customerApptBackBtn" layoutX="802.0" layoutY="479.0" mnemonicParsing="false" onAction="#goBackToReportNav" text="Back" />
+      <Label layoutX="51.0" layoutY="437.0" text="Total: " />
+      <Label fx:id="countLbl" layoutX="92.0" layoutY="437.0" />
+   </children>
+</AnchorPane>

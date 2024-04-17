@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="335.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsNavScreenController">
+   <children>
+      <Label layoutX="114.0" layoutY="42.0" text="Reports" textFill="#950fdb">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="contactScheduleBtn" layoutX="100.0" layoutY="132.0" mnemonicParsing="false" onAction="#goToContactSchedule" text="Contact Schedule">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="customerReportsBtn" layoutX="101.0" layoutY="188.0" mnemonicParsing="false" onAction="#goToCustomerReports" text="Customer Reports">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="reportsBackBtn" layoutX="136.0" layoutY="242.0" mnemonicParsing="false" onAction="#goBackToMainMenu" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
